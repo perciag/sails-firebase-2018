@@ -1,0 +1,45 @@
+{
+    "name": "sails-firebase-2018",
+    "version": "0.0.2",
+    "description": "Sails / Waterline adapter for Firebase.",
+    "main": "lib/adapter.js",
+    "scripts": {
+        "test": "node test/integration/runner -R spec -b"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/alekcz/sails-firebase.git"
+    },
+    "keywords": [
+        "firebase",
+        "alekcz",
+        "adapter",
+        "sails",
+        "waterline",
+        "orm",
+        "sailsjs",
+        "sails.js"
+    ],
+    "author": "percival@crius.com.br",
+    "license": "MIT",
+    "readmeFilename": "README.md",
+    "dependencies": {
+        "firebase": "^5.0.3",
+        "firebase-token-generator": "^2.0.0",
+        "waterline-criteria": "^2.0.0",
+        "waterline-errors": "^0.10.1"
+    },
+    "devDependencies": {
+        "waterline-adapter-tests": "git://github.com/balderdashy/waterline-adapter-tests.git#associations",
+        "mocha": "*",
+        "root-require": "^0.3.1",
+        "captains-log": "^2.0.0"
+    },
+    "sailsAdapter": {
+        "sailsVersion": "^1.0.0",
+        "implements": [
+            "semantic",
+            "queryable"
+        ]
+    }
+}
